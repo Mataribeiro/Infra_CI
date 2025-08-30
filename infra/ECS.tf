@@ -1,5 +1,6 @@
 module "ecs" {
   source = "terraform-aws-modules/ecs/aws"
+  version = "latest"
 
   cluster_name       = var.ambiante
   fargate_capacity_providers = {
